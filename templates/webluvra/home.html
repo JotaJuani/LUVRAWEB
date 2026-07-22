@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+  <div class="decor-circle circle1"></div>
+  <div class="decor-circle circle2"></div>
+  <div class="decor-circle circle3"></div>
+  <div class="decor-circle circle4"></div>
+  
+  <div class="hero-content">
+    <h1><h1>Desarrollo y Fabricación de Soluciones Ortopédicas</h1></h1>
+    <p>
+      En <strong>LUVRA</strong>, desarrollamos y fabricamos soluciones ortopédicas de alta calidad, combinando innovación, precisión y compromiso con el bienestar de cada paciente.
+    </p>
+    <a href="{% url 'all_products_random' %}" class="btn-primary">Conocé nuestros productos</a>
+  </div>
+</section>
+
+<!-- INFO -->
+<section class="info">
+  <h2>Soluciones Ortopédicas con Respaldo y Confianza</h2>
+  <p class="section-subtitle">En Luvra, cada producto se fabrica bajo estrictos controles de calidad y normas sanitarias.</p>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <i class="bi bi-award"></i>
+      <h3>Certificaciones Oficiales</h3>
+      <p>Certificaciones otorgadas por la <strong>ANMAT</strong> y el <strong>Ministerio de Salud</strong>.</p>
+    </div>
+
+    <div class="info-card">
+      <i class="bi bi-gear-wide-connected"></i>
+      <h3>Fábrica Habilitada</h3>
+      <p>Habilitada por la Provincia para fabricar y distribuir productos ortopédicos.</p>
+    </div>
+
+    <div class="info-card">
+      <i class="bi bi-people"></i>
+      <h3>Confianza y Trayectoria</h3>
+      <p>Más de <strong>40 años de experiencia</strong> en innovación y servicio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTOS DESTACADOS -->
+<section class="cta">
+  <h2>Descubrí nuestra línea completa de productos</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <a href="" class="full-card-link"></a>
+
+      <img src="{% static 'img/tronco.png' %}" alt="tronco" />
+      <div class="product-info">
+        <h3>Tronco y brazos</h3>
+        <p>Diseñadas para brindar estabilidad y protección.</p>
+      </div>
+
+      <a href="{% url 'product_list_by_category' 'tronco-y-brazos' %}" class="btn-secondary explore-btn">Explorar</a>
+    </div>
+
+    <div class="product-card">
+      <a href="" class="full-card-link"></a>
+
+      <img src="{% static 'img/cuello.png' %}" alt="cuello" />
+      <div class="product-info">
+        <h3>Cuello</h3>
+        <p>Fabricados con materiales de alta calidad para confort y sujeción precisa.</p>
+      </div>
+
+      <a href="{% url 'product_list_by_category' 'cuello' %}" class="btn-secondary explore-btn">Explorar</a>
+    </div>
+    <div class="product-card">
+      <a href="" class="full-card-link"></a>
+
+      <img src="{% static 'img/mano_brazo.png' %}" alt="mano-brazo" />
+      <div class="product-info">
+        <h3>Mano-Muñeca</h3>
+        <p>Diseñadas para brindar estabilidad y protección.</p>
+      </div>
+
+      <a href="{% url 'product_list_by_category' 'mano-muneca' %}" class="btn-secondary explore-btn">Explorar</a>
+    </div>
+    <div class="product-card">
+      <a href="" class="full-card-link"></a>
+
+      <img src="{% static 'img/pie3.png' %}" alt="pie" />
+      <div class="product-info">
+        <h3>Pie</h3>
+        <p>Diseñadas para brindar estabilidad y protección.</p>
+      </div>
+
+      <a href="{% url 'product_list_by_category' 'pie' %}" class="btn-secondary explore-btn">Explorar</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- COBERTURA -->
+<section class="coverage">
+  <div class="coverage-content">
+    <h2>Fabricación y Distribución en Todo el País</h2>
+    <p>
+      Nos especializamos en la fabricación y distribución de productos en todo el país, garantizando stock permanente y entrega inmediata, con un servicio de envíos confiable y la posibilidad de despachos internacionales.
+    </p>
+  </div>
+  <div class="coverage-map">
+    <img src="{% static 'img/envios_pais2.jpg' %}" alt="Mapa de Argentina" />
+  </div>
+</section>
+
+{% endblock %}

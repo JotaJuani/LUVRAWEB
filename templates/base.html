@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Luvra{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'styles/main.css' %}?v=123">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <a href="https://wa.me/5491156421409" 
+     class="whatsapp-float" 
+     target="_blank" 
+     rel="noopener noreferrer">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+         alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+
+<header class="navbar">
+  <!-- Brand -->
+  <div class="brand">
+    <a href="{% url 'home' %}">
+        <img src="{% static 'img/logo_luvra_df_color_resized_bg.png' %}" alt="Luvra Logo">
+    </a>
+</div>
+
+  <!-- Nav links -->
+  <nav class="nav-links" id="nav-links">
+    <a href="{% url 'home' %}">Inicio</a>
+    <a href="{% url 'all_products_random' %}">Productos</a>
+    <a href="{% url 'about' %}">Nosotros</a>
+    <a href="{% url 'contact' %}">Contacto</a>
+  </nav>
+
+
+  <!-- Hamburger para móviles a la derecha -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+  <!-- CONTENIDO VARIABLE -->
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+<section class="cta-final">
+    <div class="cta-container">
+      <h2>¿Sos distribuidor o profesional de la salud?</h2>
+      <p>Contactanos para acceder a precios especiales y realizar pedidos mayoristas.</p>
+      <a href="{% url 'contact' %}" class="btn-cta">Solicitar información</a>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Luvra Fabrica — Todos los derechos reservados</p>
+  </footer>
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("nav-links");
+  const navItems = navLinks.querySelectorAll("a");
+
+  // Abrir / cerrar menú
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Cerrar menú al hacer clic en un enlace
+  navItems.forEach(item => {
+    item.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
+</script>
+</body>
+</html>
