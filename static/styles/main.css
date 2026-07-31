@@ -971,3 +971,190 @@ footer {
   margin-top: 20px;
 }
 }
+@media (max-width: 480px) {
+
+  /* NAVBAR */
+  .navbar{
+    padding: .9rem 1rem;
+  }
+
+  .brand img{
+    height: 24px;
+  }
+
+  /* HERO */
+  .hero{
+    min-height: 75vh;
+    padding: 0 20px;
+  }
+
+  .hero-content h1{
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p{
+    font-size: .95rem;
+  }
+
+  .btn-primary{
+    width: 100%;
+    max-width: 260px;
+  }
+
+  /* INFO */
+  .info{
+    padding: 4rem 20px;
+  }
+
+  .info h2{
+    font-size: 1.8rem;
+  }
+
+  .section-subtitle{
+    font-size: .95rem;
+    border: none;
+    padding: 0;
+  }
+
+  .info-card{
+    padding: 1.5rem;
+  }
+
+  .info-card h3{
+    font-size: 1.2rem;
+  }
+
+  /* PRODUCTOS */
+  .cta{
+    padding: 60px 20px;
+  }
+
+  .cta h2{
+    font-size: 1.7rem;
+    margin-bottom: 35px;
+  }
+
+  .product-grid{
+    gap: 25px;
+  }
+
+  .product-card img{
+    height: 220px;
+  }
+
+  .product-info{
+    padding: 20px;
+  }
+
+  /* COBERTURA */
+  .coverage{
+    padding: 60px 20px;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .coverage-content h2{
+    font-size: 1.7rem;
+  }
+
+  .coverage-content p{
+    font-size: .95rem;
+  }
+
+  /* NOSOTROS */
+  .about{
+    padding: 3rem 20px;
+  }
+
+  .about-container{
+    gap: 2rem;
+  }
+
+  .about-text{
+    text-align: center;
+  }
+
+  .about-text h1{
+    font-size: 2rem;
+  }
+
+  .about-text p{
+    font-size: .95rem;
+  }
+
+  /* CONTACTO */
+  .contactpage-container{
+    padding: 20px 15px;
+  }
+
+  .contactpage-info,
+  .contactpage-form{
+    padding: 20px;
+  }
+
+  .contactpage-map-container{
+    height: 300px;
+  }
+
+  /* CTA FINAL */
+  .cta-final{
+    padding: 60px 20px;
+  }
+
+  .cta-final h2{
+    font-size: 1.7rem;
+  }
+
+  .cta-final p{
+    font-size: .95rem;
+  }
+
+  .btn-cta{
+    width: 100%;
+    max-width: 280px;
+  }
+
+  /* BOTÓN WHATSAPP */
+  .whatsapp-icon{
+    width: 52px;
+    height: 52px;
+  }
+
+  /* PRODUCT DETAIL */
+  .bp-title{
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .bp-section,
+  .bp-section:nth-child(even){
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .bp-image img{
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .bp-text{
+    width: 100%;
+  }
+
+  .bp-text h3{
+    font-size: 1.5rem;
+  }
+
+  .bp-text p{
+    font-size: .95rem;
+  }
+
+  /* Ocultar decoración para mejorar rendimiento */
+  .decor-circle,
+  .bp-circle,
+  .bp-bg-diagonal{
+    display: none;
+  }
+}
