@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta recibida - Luvra, insumos ortopédicos</title>
+
+  <style>
+    body {
+      background-color: #f4f6f8;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #2b2b2b;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(2, 37, 67, 0.12);
+    }
+
+    .header {
+      text-align: center;
+      padding-bottom: 12px;
+      border-bottom: 3px solid #022543;
+    }
+
+    .header h1 {
+      color: #022543;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #022543;
+    }
+
+    .info-box {
+      background: #f4f8fc;
+      border-left: 5px solid #295072;
+      padding: 14px 16px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #022543;
+      color: white !important;
+      padding: 12px 22px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-weight: bold;
+      transition: .2s ease;
+    }
+
+    .button:hover {
+      background: #295072;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      margin-top: 25px;
+      line-height: 1.5;
+      border-top: 1px solid #e6edf3;
+      padding-top: 18px;
+    }
+
+    .small-text {
+      font-size: 12px;
+      color: #777;
+      margin-top: 15px;
+    }
+
+    h3 {
+      color: #022543;
+    }
+
+    strong {
+      color: #022543;
+    }
+
+    a {
+      color: #295072;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Gracias por tu consulta!</h1>
+    </div>
+
+    <!-- MENSAJE PRINCIPAL -->
+    <p>Hola <strong>{{ name }}</strong>,</p>
+
+    <p>
+      Recibimos tu mensaje y en breve un miembro de nuestro equipo se comunicará con usted.
+      A continuación puede ver un resumen de tu consulta:
+    </p>
+
+    <!-- RESUMEN -->
+    <div class="info-box">
+      <p><span class="section-title">Motivo de la consulta:</span><br>{{ reason }}</p>
+      <p><span class="section-title">Descripción:</span><br>{{ description }}</p>
+    </div>
+
+    <!-- INFORMACIÓN ÚTIL -->
+    <h3 style="margin-top:25px;">Información útil</h3>
+
+    <p>
+      <strong>🕒 Horarios de atención:</strong><br>
+      Lunes a Viernes de 9:00 a 18:00 hs
+    </p>
+
+    <p>
+      <strong>🚚 Envíos:</strong><br>
+      Disponemos de <strong>logística propia</strong>, además de servicios de correo y transporte privado, garantizando cobertura nacional.
+    </p>
+
+    <p>
+      <strong>📍 Local:</strong><br>
+      Almafuerte 3294, San Justo, Buenos Aires
+    </p>
+
+    <!-- BOTÓN -->
+    <div style="text-align:center;">
+      <a class="button" href="https://wa.me/541156421409">
+        Contactar por WhatsApp
+      </a>
+    </div>
+
+    <!-- CIERRE -->
+    <p style="margin-top:25px;">
+      Muchas gracias por confiar en <strong>Luvra</strong>.<br>
+      Estamos para ayudarte en todo lo que necesites.
+    </p>
+
+    <!-- PRIVACIDAD -->
+    <p class="small-text">
+      Aviso de privacidad: La información enviada será utilizada únicamente para responder tu consulta
+      y no será compartida con terceros bajo ninguna circunstancia.
+    </p>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <strong>Luvra Insumos Ortopédicos</strong><br>
+      Almafuerte 3294, San Justo, Buenos Aires<br>
+      Este es un mensaje automático. Por favor, no respondas a este correo.
+    </div>
+
+  </div>
+
+</body>
+</html>
