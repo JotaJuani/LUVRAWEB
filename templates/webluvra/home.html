@@ -16,7 +16,12 @@
     <a href="{% url 'all_products_random' %}" class="btn-primary">Conocé nuestros productos</a>
   </div>
 </section>
-{% block carousel %}
+<!-- INFO -->
+<section class="info">
+  <h2>Soluciones Ortopédicas con Respaldo y Confianza</h2>
+  <p class="section-subtitle">En 2026, formamos parte de Expo Ortopédica como expositores, reafirmando nuestro compromiso con la innovación y la calidad en cada producto.</p>
+  
+    {% block carousel %}
   
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -56,11 +61,7 @@
       <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
-{% endblock %}
-<!-- INFO -->
-<section class="info">
-  <h2>Soluciones Ortopédicas con Respaldo y Confianza</h2>
-  <p class="section-subtitle">En 2026, formamos parte de Expo Ortopédica como expositores, reafirmando nuestro compromiso con la innovación y la calidad en cada producto.</p>
+{% endblock %}  
   <div class="info-grid">
     <div class="info-card">
       <i class="bi bi-award"></i>
