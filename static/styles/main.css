@@ -64,6 +64,75 @@ body {
 
 /* === RESPONSIVE DESIGN === */
 
+/* carousel = */
+.carousel-container {
+    position: relative;
+}
+.carousel-slide{
+    justify-content: center;
+}
+.carousel-slide p{
+    justify-items: center;
+}
+#carouselExampleCaptions {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.card-title .card-body{
+    color:#b37777 ;
+}
+#carouselExampleCaptions .carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleCaptions .carousel-item {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#carouselExampleCaptions .carousel-item img {
+    height: 100vh;
+    width: 100vh;
+    object-fit: cover;
+    box-sizing: border-box;
+    filter: brightness(0.6);
+}
+
+.carousel-caption .slide-title-dif .icon-logo {
+        width: 74px !important;
+        height: 76px !important; 
+        vertical-align: baseline; 
+        margin-right: 4px; 
+      }
+
+.custom-carousel-control {
+    color: rgba(0, 0, 0, 0.5); 
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+   .carousel-control-prev-icon,
+   .carousel-control-next-icon {
+    background-color: #9e6676; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 30%; 
+    z-index: 999;
+    
+  }
+  
+  .custom-carousel-control:hover .carousel-control-prev-icon,
+  .custom-carousel-control:hover .carousel-control-next-icon {
+    background: black; 
+  }
+
+
 /* Botón sticky general */
 .whatsapp-float {
   position: fixed;
@@ -1145,44 +1214,23 @@ footer {
     border: none;
     padding: 0;
   }
-  .expo-carousel {
-        width: 94%;
-        margin: 20px auto 30px;
-
-        border-radius: 12px;
-
-        box-shadow:
-            0 6px 18px rgba(0, 0, 0, 0.12);
-    }
-
-    .expo-carousel .carousel-item {
-        height: 210px;
-    }
-
-    .expo-carousel .carousel-control-prev,
-    .expo-carousel .carousel-control-next {
-        width: 15%;
-        opacity: 0.85;
-    }
-
-    .expo-carousel .carousel-control-prev-icon,
-    .expo-carousel .carousel-control-next-icon {
-        width: 32px;
-        height: 32px;
-
-        background-size: 40%;
-    }
-
-    .expo-carousel .carousel-indicators {
-        margin-bottom: 8px;
-    }
-
-    .expo-carousel .carousel-indicators button {
-        width: 7px;
-        height: 7px;
-
-        margin: 0 4px;
-    }
+   .carousel-caption{
+        
+        vertical-align: baseline; 
+        margin-right: 2px; 
+      }
+      .carousel-caption .slide-title-dif {
+        width: 50px !important; 
+        height: 52px !important; 
+        vertical-align: baseline; 
+        margin-right: 2px; 
+      }
+      .carousel-caption .slide-sub {
+        margin-top: 2px;
+        font-size: 1rem; 
+        font-family: 'Roboto', sans-serif;
+        color: #9e6676;
+      }
   .info-card{
     padding: 1.5rem;
   }
