@@ -93,8 +93,8 @@ body {
 }
 
 #carouselExampleCaptions .carousel-item img {
-    height: 100vh;
-    width: 100vh;
+    height: 70vh;
+    width: 70vh;
     object-fit: cover;
     box-sizing: border-box;
     filter: brightness(0.6);
@@ -119,7 +119,7 @@ body {
   }
    .carousel-control-prev-icon,
    .carousel-control-next-icon {
-    background-color: #9e6676; 
+    background-color: #719fd4; 
     width: 20px; 
     height: 20px; 
     border-radius: 30%; 
